@@ -2,6 +2,8 @@ package com.itwillbs.service;
 
 import com.itwllbs.domain.BoardVO;
 
+
+
 public interface BoardService {
 	
 	// 글쓰기 동작

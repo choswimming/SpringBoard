@@ -4,10 +4,12 @@ import javax.inject.Inject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import com.itwillbs.persistence.BoardDAO;
 import com.itwllbs.domain.BoardVO;
 
+@Service
 public class BoardServiceImpl implements BoardService{
 	
 	private static final Logger logger = LoggerFactory.getLogger(BoardServiceImpl.class);
@@ -23,7 +25,6 @@ public class BoardServiceImpl implements BoardService{
 		bdao.create(vo);
 		
 		logger.debug(" 글쓰기 완료! ");
-		
 		
 	}
 
