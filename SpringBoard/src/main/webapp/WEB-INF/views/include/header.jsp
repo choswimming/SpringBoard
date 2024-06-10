@@ -8,16 +8,16 @@
     <title>AdminLTE 2 | Dashboard</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
-    <link href="./resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="${pageContext.request.contextPath }/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="./resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="${pageContext.request.contextPath }/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
-    <link href="./resources/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="${pageContext.request.contextPath }/resources/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,13 +28,13 @@
     
   </head>
       <!-- jQuery 2.1.4 -->
-    <script src="./resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="${pageContext.request.contextPath }/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
   <body class="skin-blue sidebar-mini">
     <div class="wrapper">
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="./resources/index2.html" class="logo">
+        <a href="${pageContext.request.contextPath }/resources/index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
@@ -65,7 +65,7 @@
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="./resources/dist/img/user7-128x128.jpg" class="img-circle" alt="User Image"/>
+                            <img src="${pageContext.request.contextPath }/resources/dist/img/user7-128x128.jpg" class="img-circle" alt="User Image"/>
                           </div>
                           <h4>
                             Support Team
@@ -77,7 +77,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="./resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="${pageContext.request.contextPath }/resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             AdminLTE Design Team
@@ -89,7 +89,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="./resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="${pageContext.request.contextPath }/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Developers
@@ -101,7 +101,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="./resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="${pageContext.request.contextPath }/resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Sales Department
@@ -113,7 +113,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="./resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="${pageContext.request.contextPath }/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Reviewers
@@ -242,13 +242,13 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="./resources/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                  <img src="${pageContext.request.contextPath }/resources/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
                   <span class="hidden-xs">Alexander Pierce</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="./resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    <img src="${pageContext.request.contextPath }/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
                       Alexander Pierce - Web Developer
                       <small>Member since Nov. 2012</small>
@@ -292,7 +292,7 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="./resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="${pageContext.request.contextPath }/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p>Alexander Pierce</p>
@@ -318,8 +318,8 @@
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="./resources/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                <li><a href="./resources/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                <li><a href="${pageContext.request.contextPath }/resources/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+                <li><a href="${pageContext.request.contextPath }/resources/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -329,14 +329,14 @@
                 <span class="label label-primary pull-right">4</span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                <li><a href=".${pageContext.request.contextPath }/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+                <li><a href=".${pageContext.request.contextPath }/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+                <li><a href=".${pageContext.request.contextPath }/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+                <li><a href=".${pageContext.request.contextPath }/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
               </ul>
             </li>
             <li>
-              <a href="../widgets.html">
+              <a href=".${pageContext.request.contextPath }/widgets.html">
                 <i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
               </a>
             </li>
@@ -347,10 +347,10 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+                <li><a href=".${pageContext.request.contextPath }/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+                <li><a href=".${pageContext.request.contextPath }/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+                <li><a href=".${pageContext.request.contextPath }/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+                <li><a href=".${pageContext.request.contextPath }/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -360,12 +360,12 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-                <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-                <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-                <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-                <li><a href="../UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+                <li><a href=".${pageContext.request.contextPath }/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+                <li><a href=".${pageContext.request.contextPath }/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+                <li><a href=".${pageContext.request.contextPath }/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+                <li><a href=".${pageContext.request.contextPath }/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+                <li><a href=".${pageContext.request.contextPath }/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+                <li><a href=".${pageContext.request.contextPath }/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
               </ul>
             </li>
             <li class="treeview active">
@@ -385,18 +385,18 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-                <li><a href="../tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+                <li><a href=".${pageContext.request.contextPath }/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+                <li><a href=".${pageContext.request.contextPath }/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
               </ul>
             </li>
             <li>
-              <a href="../calendar.html">
+              <a href=".${pageContext.request.contextPath }/calendar.html">
                 <i class="fa fa-calendar"></i> <span>Calendar</span>
                 <small class="label pull-right bg-red">3</small>
               </a>
             </li>
             <li>
-              <a href="../mailbox/mailbox.html">
+              <a href=".${pageContext.request.contextPath }/mailbox/mailbox.html">
                 <i class="fa fa-envelope"></i> <span>Mailbox</span>
                 <small class="label pull-right bg-yellow">12</small>
               </a>
@@ -407,13 +407,13 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-                <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-                <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-                <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-                <li><a href="../examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-                <li><a href="../examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-                <li><a href="../examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>                
+                <li><a href=".${pageContext.request.contextPath }/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+                <li><a href=".${pageContext.request.contextPath }/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+                <li><a href=".${pageContext.request.contextPath }/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+                <li><a href=".${pageContext.request.contextPath }/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+                <li><a href=".${pageContext.request.contextPath }/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+                <li><a href=".${pageContext.request.contextPath }/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+                <li><a href=".${pageContext.request.contextPath }/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>                
               </ul>
             </li>
             <li class="treeview">
@@ -439,7 +439,7 @@
                 <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
               </ul>
             </li>
-            <li><a href="./resources/documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+            <li><a href="${pageContext.request.contextPath }/resources/documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
             <li class="header">LABELS</li>
             <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
