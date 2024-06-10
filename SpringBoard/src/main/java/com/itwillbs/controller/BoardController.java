@@ -36,6 +36,7 @@ public class BoardController {
 		// 한글 인코딩(필터 처리)
 		// 전달정보 저장
 		logger.debug(" vo : "+vo);
+		logger.debug(" vo : {} ",vo);
 		
 		// 서비스 -> DAO에 동작 호출
 		bService.regist(vo);
