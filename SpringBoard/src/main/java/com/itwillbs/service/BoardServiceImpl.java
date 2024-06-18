@@ -48,12 +48,20 @@ public class BoardServiceImpl implements BoardService{
 
 	@Override
 	public BoardVO getBoard(int bno) throws Exception {
-		logger.debug("getBoard(int bno)");
+		logger.debug("getBoard(int bno) 호출");
 			
 		return bdao.getBoard(bno);
 	}
 
+	@Override
+	public void updateBoard(BoardVO vo) throws Exception {
+		logger.debug("updateBoard(BoardVO vo) 호출");
+		
+		bdao.updateBoard(vo);
+		
+	}
 
+	
 
 
 
