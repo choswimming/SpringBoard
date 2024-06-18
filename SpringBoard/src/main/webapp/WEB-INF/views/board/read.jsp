@@ -17,7 +17,6 @@ ${bno}
 		<form role="form" action="" method="post">
 			<input type="hidden" name="bno" value="${resultVO.bno }">
 		</form>	
-	
 
 
 		<div class="box-body">
@@ -64,6 +63,19 @@ ${bno}
 			$("form[role='form']").submit();
 		
 		})
+		
+		
+		// '삭제'버튼 클릭
+		$(".btn-warning").click(function(){
+// 			삭제페이지로 이동(+bno)
+		
+			$("form[role='form']").attr("action","/controller/board/remove");
+			$("form[role='form']").submit();
+		
+		})
+		
+		
+		
 		
 		
 		
