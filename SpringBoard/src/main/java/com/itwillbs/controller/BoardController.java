@@ -12,8 +12,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.itwillbs.domain.BoardVO;
@@ -107,10 +109,51 @@ public class BoardController {
 		// 전달할 정보를 저장(model)
 		model.addAttribute("resultVO", resultVO);
 		// 연결된 뷰페이지 이동
-		
-		
-		
 	}
+	
+	//  게시판 글 수정하기(기존의 글정보 확인) - GET
+	
+	@GetMapping(value="/modify")
+	public String modifyGET(Model model,@RequestParam("bno") int bno) throws Exception{
+		logger.debug(" modifyGET() 실행");
+		
+		// 전달정보 bno 저장
+		logger.debug(" bno : "+ bno);
+		
+		// 서비스 - DAO 글 정보 조회 동작
+		BoardVO resultVO = bService.getBoard(bno);
+		logger.debug("rseultVO : "+resultVO);
+		
+		// 연결된 뷰페이지로 정보 전달
+		model.addAttribute("resultVO",resultVO);
+		
+		// /board/modify.jsp
+		return "/board/modify";
+	}
+	
+	//  게시판 글 수정하기(기존의 글정보 확인) - POST
+	@PostMapping(value="/modify")
+	public String modifyPOST(BoardVO vo,RedirectAttributes rttr) throws Exception{
+		logger.debug("modifyPOST()실행 ");
+		// 한글처리 인코딩(필터)
+		// 전달 정보 저장
+		logger.debug("수정할 내용, {} ",vo);
+		
+		// 서비스 - DAO 글내용을 수정
+		bService.updateBoard(vo);
+		
+		// 글 수정 성공 메시지
+		rttr.addFlashAttribute("modify","modifyOK");
+
+		
+		
+		return "redirect:/board/listALL";
+	}
+	
+	
+	
+	
+	
 	
 	
 	
