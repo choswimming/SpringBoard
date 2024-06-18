@@ -31,7 +31,9 @@
 				<c:forEach var="vo" items="#{boardList}">
 					<tr>
 						<td>${vo.bno}</td>
-						<td>${vo.title}</td>
+						<td>
+						<a href="/controller/board/read?bno=${vo.bno }">${vo.title}</a>
+						</td>
 						<td>${vo.writer}</td>
 						<td><fmt:formatDate value="${vo.regdate}" pattern="yyyy-MM-dd HH:mm:ss" /></td>
 						<td><span class="badge bg-blue">${vo.viewcnt}</span></td>
