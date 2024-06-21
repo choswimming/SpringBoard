@@ -319,7 +319,8 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="/controller/board/regist"><i class="fa fa-circle-o"></i>글쓰기</a></li>
-                <li><a href="/controller/board/listALL"><i class="fa fa-circle-o"></i> 게시판 목록(ALL)</a></li>
+<!--                 <li><a href="/controller/board/listALL"><i class="fa fa-circle-o"></i> 게시판 목록(ALL)</a></li> -->
+                <li><a href="/controller/board/listPage"><i class="fa fa-circle-o"></i> 게시판 목록(ALL)</a></li>
               </ul>
             </li>
             <li class="treeview">

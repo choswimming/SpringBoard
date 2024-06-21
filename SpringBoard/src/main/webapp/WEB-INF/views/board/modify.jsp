@@ -9,13 +9,15 @@ ${bno}
 
 <div class="box box-primary">
 	<div class="box-header with-border">
-		<h3 class="box-title">/board/read.jsp</h3>
+		<h3 class="box-title">/board/modify.jsp</h3>
 	</div>
 	
 	
 
 		<form role="form" action="" method="post">
 			<input type="hidden" name="bno" value="${resultVO.bno }">
+			<input type="hidden" name="page" value="${param.page }">
+			<input type="hidden" name="bno" value="${param.pageSize}">
 	
 
 
