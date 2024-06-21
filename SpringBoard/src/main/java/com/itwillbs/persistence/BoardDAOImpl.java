@@ -103,6 +103,13 @@ public class BoardDAOImpl implements BoardDAO{
 		
 		return sqlSession.selectList(NAMESPACE+"listPage2", cri);
 	}
+
+	@Override
+	public int getTotalCount() throws Exception {
+		logger.debug(" getTotalCOunt() 실행");
+		
+		return sqlSession.selectOne(NAMESPACE+ "countPage");
+	}
  
 	
 	

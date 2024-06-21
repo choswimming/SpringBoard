@@ -15,7 +15,10 @@ ${bno}
 	
 
 		<form role="form" action="" method="post">
-			<input type="hidden" name="bno" value="${resultVO.bno }">
+<%-- 			<input type="hidden" name="" value="${resultVO.bno }"> --%>
+			<input type="hidden" name="bno" value="${param.bno}">
+			<input type="hidden" name="page" value="${cri.page}">
+<%-- 			<input type="hidden" name="pageSize" value="${cri.pageSize}"> --%>
 		</form>	
 
 
@@ -50,6 +53,8 @@ ${bno}
 </div>
 
 
+<%-- ${cri } --%>
+
 <script type="text/javascript">
 	$(document).ready(function(){
 		
@@ -74,16 +79,10 @@ ${bno}
 		
 		})
 		
-		
-		
-		
-		
-		
-		
 		// '리스트'버튼 클릭시 리스트 페이지로 이동
 		$(".btn-primary").click(function(){
 // 			alert("클릭!");
-			location.href="/controller/board/listALL";
+			location.href="/controller/board/listPage?page=${cri.page}";
 		})
 		
 		

@@ -54,7 +54,36 @@
 		private DataSource ds;    
     
     
+ 	// 하단 페이징 처리
+ 	
+ 	- 시작 페이지 번호 (startPage)
+ 		startPage = (endPage - 블럭개스) + 1
+ 	- 끝 페이지 번호 (endPage)
+ 		endPage = (int) (올림(페이지번호/블럭개수) * 블럭개수 ) 
+ 		
+ 		=> 추가 변경 ( 글 총 개수 < 끝 페이지 ) 
+ 		endPage = 올림(전체 글의 개수 / 페이지당 출력 개수)
+			 	
+ 	- 전체 글의 개수 (DB조회 - count())
+ 	- 이전 페이지 (prev)
+		prev = startPage == 1? false:true;
+		prev = startPage != 1?;
+ 	
+ 	- 다음 페이지 
+ 	   	next = endPage * 페이징당 출력 >= 전체 글 개수? false : true;
+ 	   	next = endPage * 페이징당 출력 < 전체 글 개수;
+ 	   	
+ 	* 총 123개 / 페이지당 10개씩 출력
+ 	  총 페이지 13 / 페이지 블럭 10개
+ 	
+    - 3페이지
+    	=> startPage : 1, endPage : 10, next : 0, prev : X
+    - 10페이지
+    	=> startPage : 1, endPage : 10, next : 0, prev : X
+    - 12페이지
+    	=> startPage : 11, endPage : 20->13, next : X, prev : O 
     
+    	
     
     
     
